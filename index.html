@@ -1,0 +1,1776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baosh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0px;
+            box-sizing: border-box;
+            padding: 0px;
+            
+            color: white;
+            z-index: 0;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        header {
+            background-color: black;
+            position: sticky;
+            top: 0px;
+            z-index: 5;
+            margin: 0px;
+            padding: 30px 14px;
+            display: grid;
+            grid-template-columns: 2.3fr 1fr 2fr;
+
+        }
+
+        .one {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bolder;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 15px;
+            
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .two {
+
+            margin-left: 50px;
+        }
+
+        .three {
+            display: flex;
+            justify-content: end;
+            font-weight: bolder;
+            align-items: center;
+            font-family: 'DM Sans', sans-serif;
+            gap: 25px;
+            /* font-size: 15px; */
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: 1fr 0.95fr;
+        }
+
+        /* #img-l{
+            
+            
+        } */
+        .link-l {
+
+            margin-left: 14px;
+            font-family: 'Roboto';
+            font-weight: bolder;
+            font-size: 18px;
+            display: flex;
+            gap: 30px;
+            margin-top: 120px;
+        }
+
+        .text {
+
+            position: absolute;
+            font-size: 80px;
+            top: 320px;
+            left: 250px;
+            background: none;
+        }
+
+        span {
+            position: absolute;
+            left: 95px;
+        }
+        .trans-img{
+            
+            width: 100%;
+            animation-name: moving;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: once;
+            animation-direction: alternate;
+            animation-play-state: running;
+        }
+        @keyframes moving {
+            from{
+                transform: translateX(700px)
+            }
+            to{
+                transform: translateX(0px);
+            }
+        }
+        
+
+        .brand {
+            margin-top: 75px;
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+        }
+
+        .abo {
+            font-size: 25px;
+            margin-top: 170px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            font-family: Roboto;
+            letter-spacing: 7px;
+        }
+
+        .line {
+            position: relative;
+            display: block;
+            width: 60px;
+            height: 2px;
+            background: #737373;
+            margin-left: 19px;
+
+        }
+
+        .para {
+            font-size: 55px;
+            font-weight: 500px;
+            text-align: center;
+            font-family: 'Lora', serif;
+            margin-top: 25px;
+        }
+
+
+        .exp {
+            background-color: black;
+            margin-top: 80px;
+            margin-left: 42%;
+            padding: 12px 25px;
+            font-size: 18px;
+            font-family: 'DM Sans', sans-serif;
+            letter-spacing: 5px;
+            color: whitesmoke;
+            border: 1px solid white;
+        }
+
+        .more {
+            display: flex;
+            align-items: center;
+            margin-top: 120px;
+        }
+
+        .show {
+            font-size: 25px;
+            letter-spacing: 5px;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .three-img {
+            display: grid;
+            grid-template-columns: 1.5fr 1.5fr 1fr;
+            margin-top: 50px;
+
+        }
+
+        .adv {
+            display: flex;
+            color: #737373;
+            align-items: center;
+            padding: 45px;
+            font-size: 22px;
+            font-family: 'DM Sans', sans-serif;
+
+        }
+
+        .mid {
+            font-family: 'DM Sans', sans-serif;
+            letter-spacing: normal;
+            font-family: 'Lora', serif;
+            font-size: 55px;
+            padding-left: 45px;
+        }
+
+        .lef {
+            margin-left: 50px;
+        }
+
+        .p3 {
+            letter-spacing: normal;
+            padding: 20px 45px;
+            font-size: 16px;
+            font-family: 'DM Sans', sans-serif;
+            color: rgb(208, 201, 201);
+
+        }
+
+        .view {
+            margin-top: 30px;
+            margin-left: 30%;
+            font-family: 'DM Sans', sans-serif;
+            color: rgb(208, 201, 201);
+            border: 1px solid rgb(208, 201, 201);
+            padding: 12px 25px;
+            font-size: 18px;
+            font-weight: 500;
+            background-color: black;
+        }
+
+        .sec {
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+        }
+
+        .sect {
+            padding-top: 80px;
+
+        }
+
+        .num {
+            font-family: 'Lora', serif;
+            font-size: 95px;
+
+        }
+
+        .cap {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 24px;
+            letter-spacing: normal;
+        }
+
+        .boxes {
+            position: absolute;
+            top: 60px;
+            left: 55px;
+            height: 180px;
+            width: 120px;
+            border: 0.8px solid rgb(38, 38, 38);
+
+        }
+
+        .b2 {
+            left: 450px;
+        }
+
+        .b3 {
+            left: 825px;
+        }
+
+        .b4 {
+            left: 1180px;
+        }
+
+        .what-head {
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: 1.32fr 2fr;
+            padding-left: 80px;
+        }
+
+        .part1 {
+            display: flex;
+            align-items: center;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 25px;
+            font-weight: 400;
+            letter-spacing: 4px;
+        }
+
+        .h {
+            border: 0;
+            border-top: 1px solid #737373;
+            margin-top: 16px;
+        }
+
+        .agency-box {
+            padding-top: 10px;
+            display: grid;
+            grid-template-columns: 1.5fr 2fr;
+        }
+
+        /* .agency {
+            border: 1px solid red;
+        } */
+
+        .br {
+            padding-left: 80px;
+            font-size: 55px;
+            font-weight: 500;
+            font-family: 'Lora', serif;
+
+        }
+
+        .agency-para {
+            padding: 25px 80px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: rgb(208, 201, 201);
+            line-height: 28px;
+        }
+
+        .three-col {
+            display: flex;
+            flex-direction: column;
+
+        }
+        .one-hov{
+            position: relative;
+        }
+        .first-col {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 40px;
+            padding-left: 10px;
+            transition-property: opacity;
+            transition-duration: 0.3s;
+            /* border: 1px solid red; */
+        }
+        .first-col-hov{
+            /* display: flex;
+            gap: 30px; */
+            align-items: center;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 40px;
+            padding-left: 25px;
+            display: none;
+            position: absolute;
+            top: -5px;
+            transition-property: display;
+            /* transition-duration: 1s; */
+            
+        }
+        .first-col:hover{
+            opacity: 0;
+        }
+        .one-hov:hover .first-col-hov{
+            display: block;
+            display: flex;
+        }
+        .cont {
+            font-size: 22px;
+            font-weight: 500;
+            color: #ffffff;
+            line-height: 30px;
+            font-family: 'Lora', serif;
+        }
+
+        .matter {
+            font-size: 16px;
+            font-weight: 400;
+            color: #ffffff;
+            line-height: 28px;
+            font-family: 'DM Sans', sans-serif;
+            
+        }
+        .butt-hover{
+            color: white;
+            padding: 15px 30px;
+            background:none;
+            border: #ffffff 1px solid;
+            margin-left: 200px;
+        }
+
+        .two-col {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            text-align: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 10px;
+            transition-property: opacity;
+            transition-duration: 0.3s;
+        }
+        .two-col-hov{
+            /* display: flex;
+            gap: 30px; */
+            align-items: center;
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 40px;
+            padding-left: 25px;
+            display: none;
+            position: absolute;
+            top: -5px;
+            transition-property: display;
+            /* transition-duration: 1s; */
+            
+        }
+        .two-col:hover{
+            opacity: 0;
+        }
+        .one-hov:hover .two-col-hov{
+            display: block;
+            display: flex;
+        }
+        .three-coll {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            text-align: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 10px;
+        }
+        .three-coll:hover{
+            opacity: 0;
+        }
+
+        .latest {
+            padding-left: 80px;
+            font-size: 55px;
+            font-family: 'Lora', serif;
+            font-weight: 500;
+            padding-top: 10px;
+
+        }
+
+        .grid-boxes {
+
+            margin: 35px 80px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 2fr);
+            column-gap: 72px;
+            row-gap: 60px;
+        }
+        .scale-img{
+            transition: transform 0.25s;
+        }
+        .scale-img:hover{
+            transform: scale(1.1);
+        }
+
+        .num1 {
+            padding-top: 50px;
+            font-size: 28px;
+            font-family: 'Lora', serif;
+
+        }
+
+        .prod {
+            padding-top: 15px;
+            font-size: 36px;
+            font-family: 'Lora', serif;
+            color: rgb(208, 201, 201);
+        }
+
+        .cont-mid {
+            padding-top: 15px;
+            font-size: 16px;
+            font-family: 'Lora', serif;
+            color: rgb(208, 201, 201);
+            letter-spacing: normal;
+            line-height: 30px;
+        }
+
+        .det {
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 3.8px;
+            font-family: 'DM Sans', sans-serif;
+            cursor: pointer;
+            padding-top: 25px;
+            color: rgb(208, 201, 201);
+        }
+
+        .expert {
+            padding: 10px 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .client {
+            color: rgb(255, 255, 255);
+            font-size: 55px;
+            font-weight: 500;
+            font-family: 'Lora', serif;
+        }
+
+        .feed {
+            border: 1px solid;
+            font-size: 18px;
+            color: rgb(208, 201, 201);
+            font-family: 'DM Sans', sans-serif;
+            padding: 14px 40px;
+            letter-spacing: 3.6px;
+            font-weight: 500;
+        }
+
+        .test {
+            margin: 40px 80px;
+            /* border: 1px solid red; */
+            display: grid;
+            grid-template-columns: 80px 370px 1fr;
+            gap: 50px;
+        }
+        
+
+        .two-boxes {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .one-box {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 25px;
+            padding-right: 40px;
+            border: 1px solid #737373;
+            text-align: center;
+            font-size: 35px;
+            font-weight: 500;
+        }
+
+        .one-box:hover,
+        .two-box:hover {
+            background-color: rgb(17, 16, 16);
+        }
+
+        .two-box {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 25px;
+            padding-right: 40px;
+            border: 1px solid #737373;
+            text-align: center;
+            font-size: 35px;
+            font-weight: 500;
+
+        }
+
+        .co {
+
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #737373;
+        }
+
+        .quotes {
+            font-size: 170px;
+            margin-left: 80px;
+            height: 120px;
+
+        }
+
+        .info {
+            margin-left: 80px;
+            letter-spacing: 3.6px;
+            font-size: 16px;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+            line-height: 26px;
+
+        }
+
+        .nam {
+            color: rgb(208, 201, 201);
+        }
+
+        .rol {
+            color: rgb(208, 201, 201);
+        }
+
+        .des {
+            border-top: 1px solid #737373;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .desc {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: 'DM Sans', sans-serif;
+            padding: 40px;
+            color: rgb(208, 201, 201);
+            line-height: 28px;
+        }
+
+        .star {
+            padding-left: 40px;
+            letter-spacing: 4px;
+            font-size: 20px;
+            color: rgb(208, 201, 201);
+        }
+
+        .dis {
+
+            margin: 20px 80px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .reward {
+            font-size: 55px;
+            font-family: 'Lora', serif;
+        }
+
+        .arrow {
+            display: flex;
+            gap: 20px;
+        }
+
+        .first-arrow {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+            border: 1px solid #737373;
+            text-align: center;
+            font-size: 35px;
+            font-weight: 500;
+        }
+
+        .two-arrow {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+            border: 1px solid #737373;
+            text-align: center;
+            font-size: 35px;
+            font-weight: 500;
+        }
+
+        .first-arrow:hover,
+        .two-arrow:hover {
+            background-color: rgb(17, 16, 16);
+        }
+
+        .awards {
+            display: flex;
+
+            margin: 20px 80px;
+            justify-content: space-evenly;
+        }
+
+        .foot {
+
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        .foot-img {
+
+            background-color: #737373;
+            height: 200px;
+            margin-left: 80px;
+
+        }
+
+        .re-num {
+
+            margin: 20px 40%;
+            padding: 20px 10px;
+            text-align: center;
+            background-color: rgb(17, 16, 16);
+        }
+
+        .re-dec {
+            text-align: center;
+            padding: 10px;
+            line-height: 35px;
+        }
+
+        .year {
+            margin-top: 30px;
+            font-size: 18px;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+            color: #737373;
+        }
+
+        .award-cap {
+            font-size: 23px;
+            font-family: 'Lora', serif;
+            font-weight: 500;
+        }
+
+        .award-rol {
+            font-size: 16px;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+            letter-spacing: 3.6px;
+            color: #737373;
+        }
+
+        .team-pic {
+
+            display: flex;
+            margin: 40px 80px;
+            justify-content: space-between;
+        }
+
+        .team2 {
+            margin-top: 50px;
+        }
+
+        .team3 {
+            margin-top: 100px;
+        }
+
+        .one-article {
+            display: grid;
+            grid-template-columns: 90px 1fr 60px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0px;
+
+        }
+
+        .oct {
+
+
+            transform: rotate(-90deg);
+            text-align: center;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: 'DM Sans', sans-serif;
+            color: #737373;
+        }
+
+        .art-cont {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .art-cont-1 {
+            font-size: 28px;
+            font-family: 'Lora', serif;
+            font-weight: 500;
+            line-height: 40px;
+
+        }
+
+        .art-cont-2 {
+            display: flex;
+            margin-top: 20px;
+
+        }
+
+        .art-cont-2-1 {
+            font-size: 24px;
+            font-weight: 400;
+            align-items: center;
+            font-family: 'DM Sans', sans-serif;
+            line-height: 30px;
+            letter-spacing: 4.8px;
+
+        }
+
+        .art-cont-2-2 {
+            padding-top: 4px;
+            font-size: 18px;
+            font-weight: 400;
+            align-items: center;
+            font-family: 'DM Sans', sans-serif;
+            line-height: 30px;
+            letter-spacing: 4.8px;
+
+        }
+
+        .done-arrow {
+            font-size: 50px;
+        }
+
+        .touch {
+            color: rgb(255, 255, 255);
+            font-size: 76px;
+            font-weight: 500;
+            font-family: 'Lora', serif;
+            letter-spacing: 7.6px;
+            line-height: 76px;
+            padding: 40px 0px;
+        }
+
+        .bot-line {
+            margin: 0px 20px;
+            border: none;
+            border-top: 0.8px #737373 solid;
+        }
+
+        .bot-img {
+            
+            margin: 80px;
+            margin-bottom: 50px;
+            padding: 20px;
+            padding-bottom: 0px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .com-contact {
+            
+            display: flex;
+            margin: 0px 80px;
+            justify-content: space-evenly;
+            /* gap: 80px; */
+
+        }
+
+        .com-contact1 {
+            display: flex;
+        }
+
+        .call-img {
+            
+            font-size: 25px;
+            color: #ffffff;
+            
+            border-radius: 50%;
+            padding: 10px 15px;
+            align-content: center;
+        }
+
+        .com-contact-1 {
+            
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .com-contact-1-1 {
+            
+            font-size: 18px;
+            font-weight: 400;
+            font-family: 'DM Sans', sans-serif;
+            line-height: 28px;
+            color: #737373;
+            
+        }
+
+        .com-contact-1-2 {
+            
+            font-size: 20px;
+            font-weight: 400;
+            font-family: 'lora', sans-serif;
+            line-height: 30px;
+            
+        }
+        .last-nav{
+            display: flex;
+            justify-content: center;
+            gap: 70px;
+            padding: 10px;
+        }
+        .nav-icons{
+            font-size: 17px;
+            font-weight: 400;
+            font-family: 'DM Sans', sans-serif;
+            letter-spacing: 2.04px;
+        }
+        .sym-nav{
+            margin: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding: 10px;
+        }
+        .bot-cop{
+            
+            margin-top: 70px;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: 'DM Sans', sans-serif;
+            letter-spacing: 3.6px;
+            line-height: 28px;
+            text-align: center;
+            color: #737373;
+        }
+        .back{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 80px;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: 'DM Sans', sans-serif;
+            letter-spacing: 3.6px;
+        }
+        .drop{
+            /* transition-property: all;
+            transition-duration: 0.20s; */
+           padding: 10px 5px;
+           
+           
+        }
+        .homes{
+            position: absolute;
+            background-color: white;
+            width: 18%;
+            top: 80px;
+            display: none;
+            
+        }
+        .home{
+            color: black;
+            display: block;
+            padding: 10px;
+        }
+        .drop:hover .homes{
+            display: block;
+            
+        }
+        .drop-2{
+            /* transition-property: all;
+            transition-duration: 1s; */
+           padding: 10px 5px;
+           
+           
+        }
+        .homes-2{
+            position: absolute;
+            background-color: white;
+            width: 18%;
+            top: 83px;
+            display: none;
+            
+        }
+        .home{
+            color: black;
+            display: block;
+            padding: 10px;
+            transition: background-color 0.25s;
+        }
+        .home:hover{
+            background-color: rgb(194, 189, 189);
+        }
+        .drop-2:hover .homes-2{
+            display: block;
+            
+        }
+        
+        @media (max-width:1200px){
+
+            header{
+                grid-template-columns: 1fr 1fr;
+                row-gap: 20px;
+            }
+
+            .main{
+                grid-template-columns: 1fr;
+            }
+
+            .text{
+                position: static;
+                text-align: center;
+                font-size: 65px;
+                margin-top: 50px;
+            }
+
+            span{
+                position: static;
+            }
+
+            .three-img,
+            .agency-box,
+            .what-head,
+            .grid-boxes{
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .team-pic,
+            .awards{
+                gap: 20px;
+            }
+
+            .gro{
+                margin-left: 0;
+                text-align: center;
+            }
+
+            .test{
+                grid-template-columns: 80px 300px 1fr;
+            }
+        }
+
+
+        
+        @media (max-width:992px){
+
+            header{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .one{
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .three{
+                justify-content: center;
+            }
+
+            .text{
+                font-size: 55px;
+            }
+
+            .brand{
+                flex-wrap: wrap;
+                gap: 30px;
+            }
+
+            .three-img,
+            .agency-box,
+            .grid-boxes{
+                grid-template-columns: 1fr;
+            }
+
+            .sec{
+                flex-wrap: wrap;
+                gap: 50px;
+            }
+
+            .boxes{
+                display: none;
+            }
+
+            .test{
+                grid-template-columns: 1fr;
+            }
+
+            .co{
+                border-right: none;
+            }
+
+            .awards,
+            .team-pic,
+            .com-contact{
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+            }
+        }
+
+
+        
+        @media (max-width:768px){
+
+            .text{
+                font-size: 45px;
+            }
+            .homes{
+                top: 70px;
+            }
+            .homes-2{
+                top: 70px;
+            }
+
+            .para,
+            .latest,
+            .reward,
+            .client,
+            .touch,
+            .br{
+                font-size: 40px;
+            }
+
+            .mid{
+                font-size: 40px;
+            }
+
+            .num{
+                font-size: 70px;
+            }
+
+            .quotes{
+                font-size: 100px;
+                margin-left: 0;
+            }
+
+            .info{
+                margin-left: 0;
+            }
+
+            .expert{
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .last-nav{
+                flex-wrap: wrap;
+                gap: 30px;
+            }
+
+            .sym-nav{
+                flex-wrap: wrap;
+            }
+
+            .one-article{
+                grid-template-columns: 1fr;
+                row-gap: 20px;
+                text-align: center;
+            }
+
+            .oct{
+                transform: rotate(0deg);
+            }
+        }
+
+
+        
+        @media (max-width:500px){
+
+            header{
+                position: relative;
+                padding: 20px 10px;
+            }
+            .homes{
+                top: 60px;
+            }
+            .homes-2{
+                top: 70px;
+            }
+            .one{
+                flex-direction: column;
+            }
+
+            .three{
+                gap: 15px;
+                font-size: 14px;
+            }
+
+            .link-l{
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 40px;
+            }
+
+            .text{
+                font-size: 32px;
+                line-height: 50px;
+            }
+
+            .para,
+            .latest,
+            .reward,
+            .client,
+            .touch,
+            .br{
+                font-size: 30px;
+            }
+
+            .mid{
+                font-size: 30px;
+                padding-left: 20px;
+            }
+
+            .adv,
+            .agency-para,
+            .p3,
+            .desc{
+                padding: 20px;
+            }
+
+            .feed,
+            .view,
+            .exp{
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+
+            .foot-img,
+            .bot-img,
+            .com-contact,
+            .team-pic{
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .last-nav{
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .back{
+                margin: 40px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="one">
+        <li class="drop" type="none">
+            <a href="">HOME +</a>
+            <div class="homes">
+                
+                    <a href="index.html" class="home">Home One</a><hr>
+                    <a href="" class="home">Home Two</a><hr>
+                    <a href="" class="home">One Pages</a>
+                
+            </div>
+        </li>
+
+        
+            <a href="index.html">ABOUT</a>
+        <li class="drop-2" type="none">
+            <a href="">SERVICES +</a>
+            <div class="homes-2">
+                
+                    <a href="services.html" class="home">Services</a><hr>
+                    <a href="" class="home">Agriculture Services</a><hr>
+                    <a href="" class="home">Graphic Services</a><hr>
+                    <a href="" class="home">Delivery Services</a><hr>
+                    <a href="" class="home">Farming Products</a>
+                
+            </div>
+        </li>    
+        <li class="drop-2" type="none">
+            <a href="">PAGES +</a>
+            <div class="homes-2" style="transition: display 0.5s ease-in 0.1s;">
+                
+                    <a href="pages.html" class="home">Portfolio</a><hr>
+                    <a href="" class="home">Portfolio Carousel</a><hr>
+                    <a href="" class="home">Portfolio Details</a><hr>
+                    <a href="" class="home">Team</a><hr>
+                    <a href="" class="home">Team Carousel</a> <hr>
+                    <a href="" class="home">Team Details</a> <hr>
+                    <a href="" class="home">Testimonial</a> <hr>
+                    <a href="" class="home">Pricing</a> <hr>
+                    <a href="" class="home">Faq</a> <hr>
+                    <a href="" class="home">404 Error</a> <hr>
+                    <a href="" class="home">Coming Soon Page</a>
+            </div>
+        </li> 
+        <li class="drop-2" type="none">
+            <a href="">BLOG +</a>
+            <div class="homes-2">
+                
+                    <a href="blog.html" class="home">Blog</a><hr>
+                    <a href="" class="home">Blog Carousel</a><hr>
+                    <a href="" class="home">Blog List</a><hr>
+                    <a href="" class="home">Blog Details</a>
+                    
+                
+            </div>
+        </li> 
+            <a href="contacts.html">CONTACT</a>
+        </div>
+        <div class="two">
+            <img src="./images/logo-1.png" alt="">
+        </div>
+        <div class="three">
+            <div>
+                Register/Login
+            </div>
+            <div>🔍︎</div>
+            <div>🛒<sup>3</sup></div>
+            <div>☰</div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="first-half">
+
+            <div class="link-l">
+                <a href="">Fb.</a>
+                <a href="">Tw.</a>
+                <a href="">In.</a>
+                <a href="">Be.</a>
+            </div>
+            <div class="text">
+                <h2>Things <br>
+                    <span> Creative</span> <br>
+                    Everyday
+                </h2>
+            </div>
+        </div>
+        <div id="img-l">
+            <img class="trans-img" src="./images/slider-v1-img1.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="brand">
+        <div class="brand1">
+            <img src="./images/brand-1-1.png" alt="">
+        </div>
+        <div class="brand1">
+            <img src="./images/brand-1-2.png" alt="">
+        </div>
+        <div class="brand1">
+            <img src="./images/brand-1-3.png" alt="">
+        </div>
+        <div class="brand1">
+            <img src="./images/brand-1-4.png" alt="">
+        </div>
+        <div class="brand1 brand5">
+            <img src="./images/brand-1-5.png" alt="">
+        </div>
+    </div>
+
+    <div class="abo">
+        <p style="color: #737373;">about us</p>
+        <div class="line"></div>
+    </div>
+
+    <div class="para">
+        <p>We creative best high services <br>
+            & bold solutions for your <br>
+    business growth</p>
+    </div>
+
+
+    <button class="exp">Explore More</button>
+
+    <div class="more">
+        <div class="show">Show All More</div>
+        <div class="line"></div>
+    </div>
+
+    <div class="three-img">
+        <div class="img1">
+            <img src="./images/advantages-v1-img1.jpg" alt="">
+        </div>
+        <div class="txtimg">
+            <div class="adv">
+                <p>advantages</p>
+                <div class="line"></div>
+            </div>
+            <div>
+                <div class="mid">Design</div>
+                <div class="mid lef">Creatively</div>
+                <div class="mid">Beauty</div>
+                </p>
+            </div>
+            <div>
+                <p class="p3">Mestib ulligula. remove the politices for this projects marketing reserch abusiness high
+                    levels process we try to best consultations</p>
+            </div>
+            <button class="view">
+                VIEW MORE
+            </button>
+        </div>
+        <div class="img3">
+            <img src="./images/advantages-v1-img2.jpg" alt="">
+        </div>
+    </div>
+
+
+    <!-- 2k section -->
+    <div class="sec">
+        <div class="sect">
+            <div class="boxes"></div>
+            <p class="num">2k</p>
+            <p class="cap">Expert Members</p>
+        </div>
+        <div class="sect">
+            <div class="boxes b2"></div>
+            <p class="num">213</p>
+            <p class="cap">Award Winners</p>
+        </div>
+        <div class="sect">
+            <div class="boxes b3"></div>
+            <p class="num">1k</p>
+            <p class="cap">Happy Client</p>
+        </div>
+        <div class="sect">
+            <div class="boxes b4"></div>
+            <p class="num">12k</p>
+            <p class="cap">Cup Of Tea</p>
+        </div>
+
+    </div>
+
+
+    <div class="what-head">
+        <div class="part1">
+            <div style="color: rgb(208, 201, 201)">what we do</div>
+            <div class="line"></div>
+        </div>
+        <div class="h"></div>
+    </div>
+
+
+    <div class="agency-box">
+        <div class="agency">
+            <div class="br">Agency Services</div>
+            <div class="br">We Provide</div>
+            <div class="agency-para">Mestib ulligula remove the politices project completed <br> marketing reserch
+                abusiness high level process consultation for business.</div>
+        </div>
+        
+
+        <div class="three-col">
+            <li class="one-hov" type="none">
+
+                <div class="first-col">
+                    <div><img src="./images/note.png" alt="" height="70px"></div>
+                    <div class="cont">Content Writings <br> & Marketing</div>
+                    <div class="matter">Mestib ulligula remove the politices project completed <br> marketing reserch
+                        abusiness high level process</div>
+                        
+                    </div>
+                    <div class="first-col-hov">
+                        <div style="font-size: 22px;">1</div>
+                        <div class="cont" style="margin-left: 50px;">Content Writings <br> & Marketing</div>
+                        <div>
+                            <button class="butt-hover">VIEW DETAILS > </button>
+                        </div>
+                    </div>
+            </li>
+            <hr class="h">
+            <li class="one-hov" type="none">
+            <div class="two-col">
+                <div><img src="./images/com.png" alt="" height="70px"></div>
+                <div class="cont">Graphic & Sketches <br> Designing</div>
+                <div class="matter">Mestib ulligula remove the politices project completed <br> marketing reserch
+                    abusiness high level process</div>
+            </div>
+           
+            <div class="two-col-hov">
+                        <div style="font-size: 22px;">2</div>
+                        <div class="cont" style="margin-left: 50px;">Graphic & Sketches <br> Designing</div>
+                        <div>
+                            <button class="butt-hover">VIEW DETAILS > </button>
+                        </div>
+            </div>
+            </li>
+            <hr class="h">
+            <li class="one-hov" type="none">
+            <div class="three-coll">
+                <div><img src="./images/setting.png" alt="" height="70px"></div>
+                <div class="cont">Website Design And <br> Development</div>
+                <div class="matter">Mestib ulligula remove the politices project completed <br> marketing reserch
+                    abusiness high level process</div>
+            </div>
+            <div class="two-col-hov">
+                        <div style="font-size: 22px;">3</div>
+                        <div class="cont" style="margin-left: 50px;">Website Design And <br> Development</div>
+                        <div>
+                            <button class="butt-hover">VIEW DETAILS > </button>
+                        </div>
+            </div>
+            </li>
+        </div>
+    </div>
+
+
+
+    <div class="part1">
+        <div style="margin-top: 50px; padding-left: 80px; color: rgb(208, 201, 201)">Our Gallery</div>
+        <div class="line" style="margin-top: 50px;"></div>
+    </div>
+    <div class="latest">Latest Showcase</div>
+
+    <div class="grid-boxes">
+        <div class="gboxes">
+            <img class="scale-img" src="./images/gallery-v1-img1.jpg" alt="">
+        </div>
+        <div class="gboxes scale-img">
+            <div class="num1">01</div>
+            <div class="prod">Product Design</div>
+            <p class="cont-mid">Mestib ulligula to remove the projects <br> completed market reserch abusines high <br>
+                process</p>
+            <div class="det">VIEW DETAILS ></div>
+        </div>
+        <div class="gboxes">
+            <img class="scale-img" src="./images/gallery-v1-img2.jpg" alt="">
+        </div>
+        <div class="gboxes">
+            <img class="scale-img" src="./images/gallery-v1-img3.jpg" alt="">
+        </div>
+        <div class="gboxes scale-img">
+            <div class="num1">02</div>
+            <div class="prod">The Brightest</div>
+            <p class="cont-mid">Mestib ulligula to remove the projects <br> completed market reserch abusines high <br>
+                process</p>
+            <div class="det">VIEW DETAILS ></div>
+        </div>
+        <div class="gboxes">
+            <img class="scale-img" src="./images/gallery-v1-img4.jpg" alt="">
+        </div>
+    </div>
+
+
+
+    <div class="part1">
+        <div style="margin-top: 48px; padding-left: 80px; color: rgb(208, 201, 201)">Testimonials</div>
+        <div class="line" style="margin-top: 50px;"></div>
+    </div>
+    <div class="expert">
+        <div class="client">Our Expert Clients</div>
+        <div class="feed">CLIENT FEEDBACK</div>
+    </div>
+    <div class="test">
+        <div class="two-boxes">
+            <div class="one-box">↖</div>
+            <div class="two-box">↗</div>
+        </div>
+        <div class="co">
+            <div class="quotes">“</div>
+            <div class="info">
+                <div class="nam">RAMITAS MALIKA</div>
+                <div class="rol">CO-FOUNDER</div>
+            </div>
+        </div>
+        <div class="des">
+            <div class="desc">
+                Dolor massa, a pellentesque nulla congue quis fusce convallis diam. Natorister
+                tempor faucibus imperdiet feli sed, vestibulligula. remove the politices for
+                this projects marketing reserch business high levels in the process we try
+                to best consultations in our work for futures..
+            </div>
+            <div class="star">★★★★★</div>
+        </div>
+        <div class="test-img" style="margin-left: 600px;">
+            <img src="./images/testimonials-v1-img1.png" alt="">
+        </div>
+    </div>
+
+    <div class="part1">
+        <div style="margin-top: 48px; padding-left: 80px; color: rgb(208, 201, 201)">We Proud that</div>
+        <div class="line" style="margin-top: 50px;"></div>
+    </div>
+
+    <div class="dis">
+        <div class="reward">Discover Our Awards</div>
+        <div class="arrow">
+            <div class="first-arrow">↖</div>
+            <div class="two-arrow">↗</div>
+        </div>
+    </div>
+
+    <div class="awards">
+        <div class="foot">
+            <div>
+                <img class="foot-img" src="./images/football.png" alt="">
+            </div>
+            <div class="re-num">01</div>
+            <div class="re-dec">
+                <div class="year">2012-2023</div>
+                <div class="award-cap">Best Development Awards 2022</div>
+                <div class="award-rol">DRIBBLE AWARDS-</div>
+            </div>
+        </div>
+        <div class="foot">
+            <div>
+                <img class="foot-img" src="./images/reward.png" alt="">
+            </div>
+            <div class="re-num">02</div>
+            <div class="re-dec">
+                <div class="year">2015-2018</div>
+                <div class="award-cap">Mobile Of The Month,July 2014</div>
+                <div class="award-rol">AWARDS INC-</div>
+            </div>
+        </div>
+        <div class="foot">
+            <div>
+                <img class="foot-img" style="margin-left: 50px;" src="./images/be.png" alt="">
+            </div>
+            <div class="re-num">03</div>
+            <div class="re-dec">
+                <div class="year">2012-2013</div>
+                <div class="award-cap">Year Best Interective Awards</div>
+                <div class="award-rol">BEHANCE AWARDS-</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="part1">
+        <div style="margin-top: 48px; padding-left: 80px; color: rgb(208, 201, 201)">our professionals </div>
+        <div class="line" style="margin-top: 50px;"></div>
+    </div>
+    <div class="expert">
+        <div class="client">Dedicated Our Team</div>
+        <div class="feed">VIEW MORE DETAILS</div>
+    </div>
+
+    <div class="team-pic">
+        <div class="team1 scale-img">
+            <img src="./images/team-v1-img1.jpg" alt="">
+        </div>
+        <div class="team2 scale-img">
+            <img src="./images/team-v1-img2.jpg" alt="">
+        </div>
+        <div class="team3 scale-img">
+            <img src="./images/team-v1-img3.jpg" alt="">
+        </div>
+    </div>
+
+
+
+
+
+    <div class="what-head">
+        <div class="part1">
+            <div style="color: rgb(208, 201, 201)">our insights</div>
+            <div class="line"></div>
+        </div>
+        <div class="h" style="margin-right: 80px;"></div>
+    </div>
+
+
+    <div class="agency-box">
+        <div class="agency">
+            <div class="br">Our Latest</div>
+            <div class="br">Article & New</div>
+            <div class="br">Updates</div>
+            <div class="agency-para">Mestib ulligula remove the politices project completed <br> marketing reserch
+                abusiness high level process consultation for business.</div>
+        </div>
+        <div class="three-col" style="margin-right: 80px;">
+            <div class="one-article">
+                <div class="oct">Oct 2023</div>
+                <div class="art-cont">
+                    <div class="art-cont-1">Worldwides annual spends on <br>digital advertising</div>
+                    <div class="art-cont-2">
+                        <div class="art-cont-2-1">Digital Agency</div>
+                        <div class="art-cont-2-2">By Rason Toy</div>
+                    </div>
+                </div>
+                <div class="done-arrow">↘</div>
+            </div>
+            <hr class="h">
+            <div class="one-article" style="margin-top: 20px;">
+                <div class="oct">Nov 2023</div>
+                <div class="art-cont">
+                    <div class="art-cont-1">The secret of change is to focus<br>all your energy</div>
+                    <div class="art-cont-2">
+                        <div class="art-cont-2-1">Agency/business</div>
+                        <div class="art-cont-2-2">By Rason Toy</div>
+                    </div>
+                </div>
+                <div class="done-arrow">↘</div>
+            </div>
+            <hr class="h">
+            <div class="one-article" style="margin-top: 20px;">
+                <div class="oct">Sep 2023</div>
+                <div class="art-cont">
+                    <div class="art-cont-1">A Simple Social Media Marketing<br>Checklist</div>
+                    <div class="art-cont-2">
+                        <div class="art-cont-2-1">Digital Agency</div>
+                        <div class="art-cont-2-2">By Rason Toy</div>
+                    </div>
+                </div>
+                <div class="done-arrow">↘</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin: 0px;"></div>
+
+    <hr class="bot-line">
+
+    <div class="expert">
+        <div class="touch">Get In Touch</div>
+        <div class="feed">SEND A MESSAGE</div>
+    </div>
+    <hr class="bot-line">
+
+    <div class="bot-img">
+        <img src="./images/logo-1.png" alt="">
+    </div>
+
+    <div class="com-contact">
+        <div class="com-contact1">
+            <div class="call-img">☎</div>
+            <div class="com-contact-1">
+                <div class="com-contact-1-1">Call anytime</div>
+                <div class="com-contact-1-2"><a href="tel:+ 9821 (000) - 9630">+ 9821 (000) - 9630</a></div>
+            </div>
+        </div>
+        <div class="com-contact1">
+            <div class="call-img">✉</div>
+            <div class="com-contact-1">
+                <div class="com-contact-1-1">Send email</div>
+                <div class="com-contact-1-2"><a href="mailto:baosh@company.com">baosh@company.com</a></div>
+            </div>
+        </div>
+        <div class="com-contact1">
+            <div class="call-img">
+                <img src="./images/loc.png" alt="">
+            </div>
+            <div class="com-contact-1">
+                <div class="com-contact-1-1">Visit Office</div>
+                <div class="com-contact-1-2">27 Division St, New York</div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <img style="margin: 50px 80px;" src="./images/footer-v1-img1.png" alt="">
+    </div>
+
+
+    <div class="last-nav">
+        <div class="nav-icons"><a href="">HOME</a></div>
+        <div class="nav-icons"><a href="">PAGES</a></div>
+        <div class="nav-icons"><a href="">SERVICES</a></div>
+        <div class="nav-icons"><a href="">HOME</a></div>
+    </div>
+
+
+    <div class="sym-nav">
+        <div class="sym-icons"><a href=""><img src="./images/twitter.png" alt=""></a></div>
+        <div class="sym-icons"><a href=""><img src="./images/facebook.png" alt=""></a></div>
+        <div class="sym-icons"><a href=""><img src="./images/google.png" alt=""></a></div>
+        <div class="sym-icons"><a href=""><img src="./images/pic.png" alt=""></a></div>
+        <div class="sym-icons"><a href=""><img src="./images/wifi.png" alt=""></a></div>
+        <div class="line"></div>
+    </div>
+
+
+    <div class="bot-cop">
+        Copyright © 2023 all rights reserved.
+    </div>
+
+
+    <div class="back">
+        <div><a href="">Back To Top</a></div>
+        <div class="line"></div>
+    </div>
+</body>
+
+</html>
