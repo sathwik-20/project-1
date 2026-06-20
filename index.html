@@ -38,6 +38,7 @@
 
         body {
             background-color: black;
+            width: 100%;
         }
 
         header {
@@ -1032,6 +1033,7 @@
         @media (max-width:992px){
 
             header{
+                position: relative;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -1079,7 +1081,26 @@
             .co{
                 border-right: none;
             }
-
+            .test{
+                display: flex;
+            }
+            
+            .res-box{
+                width: 20%;
+            }
+            .line-res{
+                max-width: 420px;
+            }
+            .h{
+                display: none;
+            }
+            .test-img{
+                display: none;
+            }
+            .res{
+                margin-left: 55px;
+            }
+            
             .awards,
             .team-pic,
             .com-contact{
@@ -1092,7 +1113,9 @@
 
         
         @media (max-width:768px){
-
+            .header{
+                position: relative;
+            }
             .text{
                 font-size: 45px;
             }
@@ -1115,16 +1138,29 @@
             .mid{
                 font-size: 40px;
             }
-
+            .test{
+                display: flex;
+            }
+            
+            .res-box{
+                width: 20%;
+            }
             .num{
                 font-size: 70px;
             }
-
+            .test-img{
+                display: none;
+            }
+            .line-res{
+                max-width: 420px;
+            }
             .quotes{
                 font-size: 100px;
                 margin-left: 0;
             }
-
+            .h{
+                display: none;
+            }
             .info{
                 margin-left: 0;
             }
@@ -1138,6 +1174,9 @@
             .last-nav{
                 flex-wrap: wrap;
                 gap: 30px;
+            }
+            .res{
+                margin-left: 55px;
             }
 
             .sym-nav{
@@ -1162,6 +1201,16 @@
             header{
                 position: relative;
                 padding: 20px 10px;
+                display: flex;
+                
+                
+            }
+            .one{
+                display: grid;
+                grid-template-columns: repeat(6,1fr);
+                font-size: 10px;
+                font-weight: normal;
+                
             }
             .homes{
                 top: 60px;
@@ -1224,7 +1273,9 @@
                 margin-left: 0;
                 margin-right: 0;
             }
-
+            .res{
+                text-align: center;
+            }
             .last-nav{
                 flex-direction: column;
                 align-items: center;
@@ -1543,8 +1594,8 @@
     </div>
     <div class="test">
         <div class="two-boxes">
-            <div class="one-box">↖</div>
-            <div class="two-box">↗</div>
+            <div class="one-box res-box">↖</div>
+            <div class="two-box res-box">↗</div>
         </div>
         <div class="co">
             <div class="quotes">“</div>
@@ -1666,8 +1717,8 @@
                 <div class="art-cont">
                     <div class="art-cont-1">Worldwides annual spends on <br>digital advertising</div>
                     <div class="art-cont-2">
-                        <div class="art-cont-2-1">Digital Agency</div>
-                        <div class="art-cont-2-2">By Rason Toy</div>
+                        <div class="art-cont-2-1 res">Digital Agency</div>
+                        <div class="art-cont-2-2 res">By Rason Toy</div>
                     </div>
                 </div>
                 <div class="done-arrow">↘</div>
@@ -1678,8 +1729,8 @@
                 <div class="art-cont">
                     <div class="art-cont-1">The secret of change is to focus<br>all your energy</div>
                     <div class="art-cont-2">
-                        <div class="art-cont-2-1">Agency/business</div>
-                        <div class="art-cont-2-2">By Rason Toy</div>
+                        <div class="art-cont-2-1 res">Agency/business</div>
+                        <div class="art-cont-2-2 res">By Rason Toy</div>
                     </div>
                 </div>
                 <div class="done-arrow">↘</div>
@@ -1690,8 +1741,8 @@
                 <div class="art-cont">
                     <div class="art-cont-1">A Simple Social Media Marketing<br>Checklist</div>
                     <div class="art-cont-2">
-                        <div class="art-cont-2-1">Digital Agency</div>
-                        <div class="art-cont-2-2">By Rason Toy</div>
+                        <div class="art-cont-2-1 res">Digital Agency</div>
+                        <div class="art-cont-2-2 res">By Rason Toy</div>
                     </div>
                 </div>
                 <div class="done-arrow">↘</div>
@@ -1739,8 +1790,8 @@
         </div>
     </div>
 
-    <div>
-        <img style="margin: 50px 80px;" src="./images/footer-v1-img1.png" alt="">
+    <div >
+        <img class="line-res" style="margin: 50px 80px;" src="./images/footer-v1-img1.png" alt="">
     </div>
 
 
